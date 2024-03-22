@@ -1,0 +1,35 @@
+.main-content {
+  background-color: var(--lightBGColor);
+  min-height: 100vh;
+}
+.ant-layout-header {
+  background-color: var(--lightBGColor) !important;
+  border-bottom: 1px solid var(--borderLight);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 6;
+  padding: 0 30px;
+}
+
+.v-layout {
+  display: block;
+}
+.m-layout {
+  display: none;
+}
+
+.ant-drawer-body {
+  background-color: var(--lightBGColor) !important;
+}
+
+@media (max-width: 800px) {
+  .v-layout {
+    display: none;
+  }
+  .m-layout {
+    display: block;
+    min-height: 100vh;
+  }
+}
