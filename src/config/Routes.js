@@ -31,19 +31,19 @@ const Routers = () => {
         <Route path='/forgetPassword' element={<ForgetPassword />} />
         <Route path='/resetPassword' element={<ResetPassword />} />
 
-        <Route element={<PrivateWrapper />}>
-          <Route path='/' element={<Home />} />
-          <Route path='*' element={<Navigate to='/' />} />
+        {/* <Route element={<PrivateWrapper />}> */}
+        <Route path='/' element={<Home />} />
+        <Route path='*' element={<Navigate to='/' />} />
 
-          <Route path='/map' element={<Map />} />
-          <Route path='/profile' element={<Profile />} />
-          <Route path='/video' element={<VideoRecorder />} />
-          <Route path='/videoUpload' element={<VideoUpload />} />
-          <Route path='/photo-capture' element={<PhotoCapture />} />
-          <Route path='/chat' element={<Chat />} />
-          <Route path='/feed' element={<Feed />} />
-          <Route path='/UploadModal' element={<UploadModal />} />
-        </Route>
+        <Route path='/map' element={<Map />} />
+        <Route path='/profile' element={<Profile />} />
+        <Route path='/video' element={<VideoRecorder />} />
+        <Route path='/videoUpload' element={<VideoUpload />} />
+        <Route path='/photo-capture' element={<PhotoCapture />} />
+        <Route path='/chat' element={<Chat />} />
+        <Route path='/feed' element={<Feed />} />
+        <Route path='/UploadModal' element={<UploadModal />} />
+        {/* </Route> */}
       </Routes>
     </BrowserRouter>
   )
